@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "techit-gray": {
+          200: "#737373",
           300: "#222222",
         },
       },

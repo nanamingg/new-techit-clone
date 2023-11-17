@@ -1,3 +1,5 @@
+import EllipsisIcon from "../icons/EllipsisIcon";
+
 const Header = () => {
   return (
     <header className="bg-white h-16 border-b sticky top-0">
@@ -22,8 +24,14 @@ const Header = () => {
             <li className="header-menu">기업 해커톤</li>
           </ul>
         </div>
-        <div>
-          <button>로그인</button>
+        <div className="hidden lg:block">
+          <button className="header-menu text-techit-gray-200">로그인</button>
+        </div>
+        <div className="flex gap-4 lg:hidden pr-6">
+          <button className="px-4 rounded-full border h-9 text-sm font-semibold">
+            로그인
+          </button>
+          <EllipsisIcon />
         </div>
       </div>
     </header>
