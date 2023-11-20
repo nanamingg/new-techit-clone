@@ -33,7 +33,7 @@ const bannerData = [
 ];
 
 const Banner = () => {
-  const [page, setPage] = useState();
+  const [page, setPage] = useState(0);
 
   const sliderRef = useRef();
 
@@ -66,6 +66,7 @@ const Banner = () => {
           arrows={false}
           autoplay={true}
           autoplaySpeed={5000}
+          fade={true}
         >
           {bannerData.map((v, i) => (
             <BannerCard key={i} title={v.title} desc={v.desc} image={v.image} />
@@ -75,7 +76,7 @@ const Banner = () => {
       <div className="absolute w-[1280px] px-6 left-1/2 -translate-x-1/2 bottom-6">
         <div className="text-white bg-black w-fit bg-opacity-30 flex text-xs rounded-full gap-2 py-[5px] px-3">
           <div>
-            {page + 1}/{bannerData.length}
+            {page + 1} / {bannerData.length}
           </div>
           <button onClick={onClickPrev}>
             <PrevIcon />
