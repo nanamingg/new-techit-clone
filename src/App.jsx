@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import Header from "./components/Header";
+import KdtSection from "./components/KdtSection";
 import TopBanner from "./components/TopBanner";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <TopBanner />
       <Header />
       <Banner />
+      <KdtSection />
       <section className="mt-20 bg-green-100 max-w-screen-xl mx-auto px-6">
         <div className="bg-red-100 h-[64.5px]">KDT</div>
         <div className="bg-purple-100 grid grid-cols-4 gap-6 justify-items-center">
